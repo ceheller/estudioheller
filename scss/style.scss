@@ -1,0 +1,196 @@
+body {
+    font-family: 'Otomanopee One', sans-serif;
+    font-style: normal;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+    text-transform:inherit;
+    line-height: 1;
+  }
+
+
+  .footer{
+    border-top: solid black 2px;
+    margin-top: 1%
+  }
+  
+  .introductionBody {
+    text-indent: 0.5cm;
+  }
+
+  .bienvenida {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;  
+  }
+
+  .bienvenida__encabezado {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    .bienvenida__titulo {
+      @extend.bienvenida;
+    }
+  
+    .bienvenida__logo {
+       @extend.bienvenida;
+    }
+      
+    }
+  
+
+  .anchor {
+    margin-bottom: 2%;
+  }
+  
+  .subanchor {
+    margin-top: 5%;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 5%;
+  }
+  
+  #nav-bar {
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    margin-right: 5%;
+    text-decoration: none;
+    color: inherit;
+    border-left: solid #f6f5f5 2px;
+    border-radius: 30%;
+  }
+
+  .padre {
+    background-image: linear-gradient(to bottom, rgb(209, 209, 209), white);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: "10%";
+    grid-template-rows: repeat(2, 50%);
+    grid-row-gap: 20%;
+    justify-items: center ;
+    align-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .hijo {
+      list-style-type: circle;
+      list-style-position: inside;
+      line-height: 2.5;
+    }
+  }
+  
+ 
+  
+  #form {
+    letter-spacing: 0.5em;
+  }
+  
+  #header-img {
+    transform: scale(120%);
+    height: 100px;
+    transition: 2s;
+  }
+
+  #header-img:hover {
+    height: 200px;
+  }
+  
+  .subanchor {
+    height: 10%;
+    transition: 2s;
+  }
+
+  .subanchor {
+    height: 20%;
+  }
+
+
+  #logoPrincipal {
+    padding-top: 8%;
+
+  }
+  
+    
+  #header {
+    position: fixed;
+    height: 125px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom, rgb(155, 150, 150), white);
+    align-items: center;
+    z-index: 999;
+    border-bottom: solid black 2px;
+    opacity: 0.9;
+    width: 100%;
+    color: #f6f5f5;
+    text-decoration: none;
+    background-color: red;
+  }
+
+.carousel {
+  margin: auto;
+  padding-top: 5%;
+  align-items: center;
+  width: 40%;
+}
+
+.bienvenida__parrafo {
+  @extend.bienvenida__encabezado;
+  margin-top: 5%;
+
+}
+
+@media only screen and (max-width: 980px) {
+  #header {
+    display: grid;
+    height: 40vh;
+  }
+  .anchor {
+    margin-bottom: 400px;
+  }
+
+
+  #nav-bar {
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .padre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bienvenida {
+    display: flex;
+    flex-direction: row;;
+  }
+ 
+}
+
+@media only screen and (max-width: 650px) {
+  .nav-link {
+    display: block;
+  }
+  .anchor {
+    margin-bottom: 400px;
+  }
+
+  #nav-bar {
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .padre {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
