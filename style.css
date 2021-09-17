@@ -162,4 +162,10 @@ body {
     text-decoration: none; }
   .padre {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; } 
+  .bienvenida {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  }
