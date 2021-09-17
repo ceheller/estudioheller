@@ -150,7 +150,20 @@ body {
     flex-direction: column; }
   #bienvenida {
     display: flex;
-    flex-direction: row; } }
+    flex-direction: row; } 
+  .navbar {
+      display: flex;
+      flex-direction: column;
+    }
+  .mapa {
+      width: 90%;
+      height: 50%;
+    }
+  .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 @media only screen and (max-width: 650px) {
   .nav-link {
@@ -164,6 +177,18 @@ body {
     display: flex;
     flex-direction: column; } 
   .bienvenida {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .mapa {
+    width: 90%;
+    height: 50%;
+  }
+  .form-group {
     display: flex;
     flex-direction: column;
   }
