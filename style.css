@@ -135,6 +135,11 @@ body {
 .bienvenida__parrafo {
   margin-top: 5%; }
 
+#textAreaForm {
+  height: 10vw;
+  width: 40vw;
+}
+
 
 @media only screen and (max-width: 980px) {
   #header {
